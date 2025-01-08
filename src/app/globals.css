@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #cad3e1;
+  background: #03193a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+}
+/* header */
+.header-border {
+  border-bottom: 0.8px solid #f5f9ff0d;
+}
+/* banner */
+.bg-banner-01 {
+  background: rgb(11, 70, 123);
+  background: linear-gradient(
+    135deg,
+    rgba(11, 70, 123, 1) 0%,
+    rgba(4, 27, 46, 1) 100%
+  );
+}
+.bg-banner-02 {
+  background: rgb(20, 114, 97);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 114, 97, 1) 0%,
+    rgba(8, 44, 37, 1) 100%
+  );
+}
+.bg-banner-03 {
+  background: rgb(40, 77, 206);
+  background: linear-gradient(
+    135deg,
+    rgba(40, 77, 206, 1) 0%,
+    rgba(12, 23, 65, 1) 100%
+  );
+}
+.active-banner {
+  transform: perspective(9cm) rotateX(-1deg);
+}
+.deactive-banner {
+  transform: perspective(9cm) rotateX(1deg);
+}
+/* Ex Game */
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group-hover\:opacity-100 {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+/* Fotter */
+footer a:hover {
+  color: #fff;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+/* Responsive */
+@media (max-width: 768px) {
+
+  .active-banner {
+    transform: perspective(9cm) rotateX(1deg);
+  }
+  .deactive-banner {
+    transform: perspective(9cm) rotateX(-1deg);
+  }
+}
