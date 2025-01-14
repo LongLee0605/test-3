@@ -41,7 +41,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       updateIndex(activeIndex + 1);
-    }, 500000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [activeIndex]);
 
